@@ -15,7 +15,7 @@ from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
 
 
-TOKEN		=		"<BOT TOKEN>" # Your Bot Token Here
+TOKEN		=		"1944766759:AAF5NlDnd_pAU-pSOMjhXcTTe5oBrt-cS20" # Your Bot Token Here
 updater 	= 		Updater(token=TOKEN)
 dispatcher 	= 		updater.dispatcher
 
@@ -31,7 +31,7 @@ def UrlValidator(url):
 		return 2
 
 def Shorter(url):
-	Request = requests.get("http://yeo.ir/api.php?url=" + url)
+	Request = requests.get("https://urlshortx.com/api?api=b59579128a2734d61afce82c6469152acaf95e58&url=" + url)
 	return Request.text	
 
 def SaveUserInformation(bot, update):
